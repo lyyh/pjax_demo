@@ -1,0 +1,70 @@
+//背景
+.box(@color,@widSize)
+{
+    width: @widSize;
+
+    background-color: @color;
+}
+
+
+//内容垂直居中
+.font-hei(@height,@lineHeight)
+{
+    line-height: @lineHeight;
+
+    height: @height;
+}
+
+.comment
+{
+    margin: 0 auto;
+
+    border: 1px solid #333;
+
+    .box(#cbffe8,800px);
+}
+
+.comment-header
+{
+    text-align: center;
+
+    background-color: #31ff53;
+
+    .font-hei(30px,30px);
+}
+
+.comment-body
+{
+    height: 600px;
+    overflow: auto;
+    .box(#fff,100%);
+}
+
+.comment-footer
+{
+    height: 50px;
+    padding: 0 200px;
+
+    .box(#8cd6ff,400px);
+    .comment-btn
+    {
+        display: inline-block;
+
+        width: 50px;
+
+        text-align: center;
+
+        background-color: #B9C3CE;
+
+        .font-hei(50px,50px);
+
+        &:hover{
+        	background-color: #8F97A8;
+        	cursor: pointer;
+        }
+    }
+    .comment-btn + .comment-btn
+    {
+        margin-left: 37px;
+    }
+}
